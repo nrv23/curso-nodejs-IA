@@ -41,7 +41,7 @@ const promptContext = `
       - Información adicional: El supermercado ofrece servicio a domicilio, acepta tarjetas de crédito y débito, y tiene una sección de productos orgánicos.
       - Preguntas frecuentes: ¿Cuál es el horario de atención?, ¿Dónde está ubicado el`;
 
-let conversations = {};
+let userThread = {};
 
 app.post("/api/chat", async (req, res) => {
   try {
@@ -64,31 +64,36 @@ app.post("/api/chat", async (req, res) => {
     if (!message)
       return res.status(400).json({ error: "El mensaje es requerido" });
 
-    if (!conwersations[userId])
-      conversations[userId] = [
-        
-      ];
+    if (!userThread[userId]) userThread[userId] = [];
 
-    conversations[userId].push({ role: "user", content: message });
+    userThread[userId].push({ role: "user", content: message });
 
     const response = await openai.chat.completions.create({
       model: "gpt-3.5-turbo",
-      messages: [
-        { role: promptRole, content: promptContext },
-        { role: promptRole, content: promptConstraint },
-        ...conversations[userId]
-      ],
+      messages: [...userThread[userId]],
       max_tokens: 200
     });
 
     const { content } = response.choices[0].message;
 
-    conversations[userId].push({ role: "assistant", content });
+    userThread[userId].push({ role: "assistant", content });
 
     // Limitar el tamaño de la conversación a las últimas 10 interacciones
-    if (conversations[userId].length > 12) {
-      conversations[userId] = conversations[userId].slice(-10);
+    if (!userThread[userId]) {
+      const thread = await openai.beta.threads.create();
+      userThread[userId] = userThread[userId] = thread.id;
     }
+
+    // crear una conversación con el usuario
+    await openai.beta.threads.messages.create(userThread[userId], {
+      role: "user",
+      content: message
+    });
+
+    // ehecutar la respuesta del bot
+    await openai.beta.threads.runs.create(userThread[userId], {
+      assistant_id: process.env.ASSISTANT_ID,
+    });
 
     return res.json({
       message: content

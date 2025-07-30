@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "nombre": "Arroz blanco 1kg",
+    "precio": 1.50,
+    "marca": "Tío Pelón",
+    "cantidadStock": 120,
+    "vencimiento": "2026-12-31"
+  },
+  {
+    "id": 2,
+    "nombre": "Frijoles negros 500g",
+    "precio": 1.20,
+    "marca": "La Sierra",
+    "cantidadStock": 85,
+    "vencimiento": "2026-06-30"
+  },
+  {
+    "id": 3,
+    "nombre": "Lentejas 500g",
+    "precio": 1.10,
+    "marca": "Don Pedro",
+    "cantidadStock": 60,
+    "vencimiento": "2026-05-20"
+  },
+  {
+    "id": 4,
+    "nombre": "Avena en hojuelas 400g",
+    "precio": 1.75,
+    "marca": "Quaker",
+    "cantidadStock": 90,
+    "vencimiento": "2025-12-10"
+  },
+  {
+    "id": 5,
+    "nombre": "Leche entera 1L",
+    "precio": 0.95,
+    "marca": "Dos Pinos",
+    "cantidadStock": 200,
+    "vencimiento": "2025-01-10"
+  },
+  {
+    "id": 6,
+    "nombre": "Yogur natural 150g",
+    "precio": 0.80,
+    "marca": "Yoplait",
+    "cantidadStock": 70,
+    "vencimiento": "2024-08-15"
+  },
+  {
+    "id": 7,
+    "nombre": "Huevos (cartón 12 unidades)",
+    "precio": 2.30,
+    "marca": "Avícola Centroamericana",
+    "cantidadStock": 60,
+    "vencimiento": "2025-08-10"
+  },
+  {
+    "id": 8,
+    "nombre": "Queso mozzarella 200g",
+    "precio": 2.95,
+    "marca": "Monteverde",
+    "cantidadStock": 40,
+    "vencimiento": "2024-11-05"
+  },
+  {
+    "id": 9,
+    "nombre": "Pechuga de pollo 1kg",
+    "precio": 4.50,
+    "marca": "Cinta Azul",
+    "cantidadStock": 30,
+    "vencimiento": "2024-08-01"
+  },
+  {
+    "id": 10,
+    "nombre": "Carne molida de res 1kg",
+    "precio": 5.25,
+    "marca": "El Ganadero",
+    "cantidadStock": 25,
+    "vencimiento": "2024-07-31"
+  },
+  {
+    "id": 11,
+    "nombre": "Salchichas 500g",
+    "precio": 2.80,
+    "marca": "Zwan",
+    "cantidadStock": 45,
+    "vencimiento": "2024-08-10"
+  },
+  {
+    "id": 12,
+    "nombre": "Jamón de pavo 250g",
+    "precio": 2.60,
+    "marca": "FUD",
+    "cantidadStock": 50,
+    "vencimiento": "2024-08-20"
+  },
+  {
+    "id": 13,
+    "nombre": "Pan blanco molde",
+    "precio": 1.75,
+    "marca": "Bimbo",
+    "cantidadStock": 70,
+    "vencimiento": "2025-08-03"
+  },
+  {
+    "id": 14,
+    "nombre": "Tortillas de maíz 12 unidades",
+    "precio": 1.10,
+    "marca": "La Abuela",
+    "cantidadStock": 90,
+    "vencimiento": "2024-08-05"
+  },
+  {
+    "id": 15,
+    "nombre": "Soda en lata 355ml",
+    "precio": 0.85,
+    "marca": "Coca-Cola",
+    "cantidadStock": 220,
+    "vencimiento": "2025-05-01"
+  },
+  {
+    "id": 16,
+    "nombre": "Agua embotellada 600ml",
+    "precio": 0.60,
+    "marca": "Alpina",
+    "cantidadStock": 150,
+    "vencimiento": "2026-12-31"
+  },
+  {
+    "id": 17,
+    "nombre": "Jugo de naranja 1L",
+    "precio": 1.90,
+    "marca": "Del Valle",
+    "cantidadStock": 80,
+    "vencimiento": "2024-09-10"
+  },
+  {
+    "id": 18,
+    "nombre": "Café molido 250g",
+    "precio": 2.80,
+    "marca": "1820",
+    "cantidadStock": 45,
+    "vencimiento": "2025-12-20"
+  },
+  {
+    "id": 19,
+    "nombre": "Aceite vegetal 900ml",
+    "precio": 2.10,
+    "marca": "Ideal",
+    "cantidadStock": 95,
+    "vencimiento": "2026-09-15"
+  },
+  {
+    "id": 20,
+    "nombre": "Azúcar 1kg",
+    "precio": 1.25,
+    "marca": "Laica",
+    "cantidadStock": 150,
+    "vencimiento": "2027-01-01"
+  },
+  {
+    "id": 21,
+    "nombre": "Sal yodada 500g",
+    "precio": 0.40,
+    "marca": "Cristal",
+    "cantidadStock": 100,
+    "vencimiento": "2028-03-01"
+  },
+  {
+    "id": 22,
+    "nombre": "Mayonesa 400g",
+    "precio": 1.90,
+    "marca": "Hellmann's",
+    "cantidadStock": 60,
+    "vencimiento": "2025-04-10"
+  },
+  {
+    "id": 23,
+    "nombre": "Detergente en polvo 1kg",
+    "precio": 3.50,
+    "marca": "Ariel",
+    "cantidadStock": 80,
+    "vencimiento": "2028-12-01"
+  },
+  {
+    "id": 24,
+    "nombre": "Cloro 1L",
+    "precio": 1.00,
+    "marca": "Magia Blanca",
+    "cantidadStock": 65,
+    "vencimiento": "2027-06-15"
+  },
+  {
+    "id": 25,
+    "nombre": "Desinfectante multiusos 500ml",
+    "precio": 2.00,
+    "marca": "Fabuloso",
+    "cantidadStock": 70,
+    "vencimiento": "2027-10-01"
+  },
+  {
+    "id": 26,
+    "nombre": "Jabón corporal 100g",
+    "precio": 0.75,
+    "marca": "Dove",
+    "cantidadStock": 130,
+    "vencimiento": "2027-05-15"
+  },
+  {
+    "id": 27,
+    "nombre": "Shampoo 400ml",
+    "precio": 3.20,
+    "marca": "Pantene",
+    "cantidadStock": 90,
+    "vencimiento": "2027-09-01"
+  },
+  {
+    "id": 28,
+    "nombre": "Desodorante en barra",
+    "precio": 2.10,
+    "marca": "Rexona",
+    "cantidadStock": 60,
+    "vencimiento": "2027-11-20"
+  },
+  {
+    "id": 29,
+    "nombre": "Papel higiénico 4 rollos",
+    "precio": 2.40,
+    "marca": "Scott",
+    "cantidadStock": 110,
+    "vencimiento": "2030-01-01"
+  }
+]
